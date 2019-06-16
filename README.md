@@ -1,5 +1,5 @@
 # multiperiodBinomial
-Multiperiod binomial model simulator
+Multiperiod binomial model simulator, sourced from chapter 1 of Steve Shreve's 'Stochastic calculus for finance I'.
 
 #  Build and run instructions
 1) Clone repo
