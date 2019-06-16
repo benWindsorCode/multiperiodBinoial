@@ -14,5 +14,8 @@ Derivative::Derivative(Stock* pStock, std::function<double(Stock*, int, int)> fu
 }
 
 double Derivative::payoff(int up, int down) {
+    if (up+down != this->pStock->getN()) {
+        throw "Can only evaluate derivative at final period";
+    }
     return std::invoke(this->valueFunction, this->pStock, up, down);
 }

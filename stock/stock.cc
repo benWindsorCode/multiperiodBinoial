@@ -40,6 +40,9 @@ Stock::Stock(double u, double d, double r, int N, double S_0) {
 
 // returns S_0*(u^up)*(d^down) stock price at that position in the tree
 double Stock::price(int up, int down) {
+    if (up+down > this->getN()) {
+        throw "Can't evalute time period past end of binomial model.";
+    }
     return this->S_0 * pow(this->u, up) * pow(this->d, down);
 }
 

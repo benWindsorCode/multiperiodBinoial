@@ -5,5 +5,6 @@ cc_binary(
             "//stock:stock-lib",
             "//derivative:derivative-lib",
             "//derivative:europeanCall-lib",
+            "//derivative:europeanPut-lib",
         ],
 )

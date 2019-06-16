@@ -17,3 +17,13 @@ cc_library(
                 "//derivative:derivative-lib",
         ],
 )
+
+cc_library(
+        name = "europeanPut-lib",
+        srcs = ["europeanPut.cc"],
+        hdrs = ["europeanPut.h"],
+        visibility = ["//main:__pkg__"],
+        deps = [
+                "//derivative:derivative-lib",
+        ],
+)
