@@ -1,2 +1,2 @@
-# multiperiodBinoial
+# multiperiodBinomial
 Multiperiod binomial model simulator
