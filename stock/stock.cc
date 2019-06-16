@@ -49,3 +49,15 @@ double Stock::price(int up, int down) {
 int Stock::getN() {
     return this->N;
 }
+
+double Stock::getR() {
+    return this->r;
+}
+
+double Stock::getPtilde() {
+    return this->p_tilde;
+}
+
+double Stock::getQtilde() {
+    return this->q_tilde;
+}

@@ -19,3 +19,13 @@ double Derivative::payoff(int up, int down) {
     }
     return std::invoke(this->valueFunction, this->pStock, up, down);
 }
+
+double Derivative::priceAtIntermediate(int n, int up, int down) {
+    const double discountRate = 1/(1+this->pStock->getR());
+
+    if(n == this->pStock->getN()) {
+        return payoff(up, down);
+    }
+
+    return discountRate*(this->pStock->getPtilde()*priceAtIntermediate(n, up+1, down) + this->pStock->getQtilde()*priceAtIntermediate(n, up, down+1));
+}

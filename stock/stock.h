@@ -7,6 +7,9 @@ class Stock {
         Stock(double, double, double, int, double);
         double price(int, int);
         int getN();
+        double getR();
+        double getPtilde();
+        double getQtilde();
     private:
         double u;
         double d;
