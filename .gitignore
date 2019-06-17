@@ -38,3 +38,4 @@
 *.bin
 *.ipch
 .vscode
+.ipynb_checkpoints/
