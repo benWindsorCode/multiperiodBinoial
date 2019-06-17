@@ -31,5 +31,6 @@ double Derivative::priceAtIntermediate(int n, int up, int down) {
         return payoff(up, down);
     }
 
+    // todo: cache these results for performance improvement 
     return discountRate*(this->pStock->getPtilde()*priceAtIntermediate(n+1, up+1, down) + this->pStock->getQtilde()*priceAtIntermediate(n+1, up, down+1));
 }
