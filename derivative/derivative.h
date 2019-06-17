@@ -9,6 +9,7 @@ class Derivative {
         Derivative(Stock*);
         Derivative(Stock*, std::function<double(Stock*, int, int)>);
         double payoff(int, int);
+        double value();
     protected:
         double priceAtIntermediate(int, int, int);
         std::function<double(Stock*, int, int)> valueFunction;

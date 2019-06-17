@@ -36,6 +36,8 @@ Stock::Stock(double u, double d, double r, int N, double S_0) {
     this->r = r;
     this->N = N;
     this->S_0 = S_0;
+    this->p_tilde = (1+r-d)/(u-d);
+    this->q_tilde = 1-this->p_tilde;
 }
 
 // returns S_0*(u^up)*(d^down) stock price at that position in the tree
