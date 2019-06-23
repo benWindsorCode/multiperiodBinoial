@@ -1,4 +1,4 @@
-# multiperiodBinomial
+# Multiperiod Binomial Model Pricing Calculator
 Multiperiod binomial model simulator, sourced from chapter 1 of Steve Shreve's 'Stochastic calculus for finance I'.
 
 #  Build and run instructions
